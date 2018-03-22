@@ -1,0 +1,21 @@
+*{padding: 0;margin: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6{  -webkit-text-size-adjust:100%;}
+li{list-style:none;}
+button{border: none;}
+a{text-decoration:none;}
+input,textarea{outline: none;}
+body{font-family: "Microsoft Sans Serif";font-size: 14px;background-color: #e5004f;}
+.christmas{width: 100%;margin: 0 auto;}
+.christmas .c1{background: url("../images/cs1.jpg") no-repeat center;height: 242px;}
+.christmas .c2{background: url("../images/cs2.jpg") no-repeat center;height: 311px;}
+.christmas .c3{background: url("../images/cs3.jpg") no-repeat center;height: 222px;}
+.christmas .c4{background: url("../images/cs4.jpg") no-repeat center;height: 422px;overflow: hidden;}
+.christmas .c4 .c4_cont{width: 50%;margin: 0 auto;text-align: center;}
+.christmas .c4 .c4_cont img{width: 300px;height: 300px;margin-top: 30px;}
+.christmas .c5{background: url("../images/cs5.jpg") no-repeat center;height:303px;}
+
+
+

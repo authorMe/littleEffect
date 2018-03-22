@@ -1,0 +1,24 @@
+/*
+    第二排第一张图片应该放在第一排中最小的图片的下方。
+
+
+ */
+*{
+    padding:0;
+    margin:0;
+}
+
+.box{
+    position:relative;
+    float:left;
+}
+.content{
+    padding:10px;
+    border:1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius:5px;
+}
+.content img{
+    width:190px;
+    height:auto;
+}

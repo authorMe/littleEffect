@@ -1,0 +1,96 @@
+*{padding: 0;margin: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6{  -webkit-text-size-adjust:100%;}
+li{list-style:none;}
+button{border: none;}
+a{text-decoration:none;}
+a:link{color:white;text-decoration:none;}
+a:visited{color:white;}
+a:hover{-webkit-tap-highlight-color:rgba(0,0,0,0);width: 100%;display: inline-block;height: auto;}
+input,textarea{outline: none;}
+body{font-family: "Microsoft Sans Serif";font-size: 14px;}
+.chr{width: 100%;margin: 0 auto;max-width: 750px;position: relative;}
+/*进入页面*/
+.chr .s1{background: url("../images/s1.jpg") no-repeat;background-size: 100% 100%;height: 4.13rem;}
+.chr .s2{background: url("../images/s2.jpg") no-repeat;background-size: 100% 100%;height: 4.79rem;}
+.chr .s3{background: url("../images/s3.jpg") no-repeat;background-size: 100% 100%;height: 3.27rem;overflow: hidden;}
+.chr .s3 .s3_cont{width: 54%;cursor: pointer;margin: 0 auto;height: 2.3rem;border-radius: 1rem;-webkit-border-radius: 1rem;-webkit-appearance: none;}
+/*游戏*/
+.chr .s4{display: none;width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: white;}
+.chr .s4 #ing{width: 100%;height: 100%;position: relative;}
+/*许愿*/
+.chr .s5{display: none;width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: white;text-align: center;z-index: 51;}
+.chr .s5 .s5_cont1{background: url("../images/s4.jpg") no-repeat;background-size: 100% 100%;height: 5.55rem;}
+.chr .s5 .s5_cont2{background: url("../images/s5.jpg") no-repeat;background-size: 100% 100%;height: 6.67rem;text-align: center;overflow: hidden;}
+.chr .s5 .s5_cont2 div{width: 70%;margin: 2% auto 0;background-color: #670069;border-radius: 0.2rem;-webkit-border-radius: 0.2rem;}
+.chr .s5 .s5_cont2 div textarea{width:90%;height: 2.6rem;padding: 2%;line-height: 0.48rem;font-size: 0.32rem;text-indent: 2em;color: #333;
+    margin: 0.2rem auto 0;font-family: "Microsoft Sans Serif";}
+.chr .s5 .s5_cont2 div p{width: 100%;overflow: hidden;margin-top: 0.2rem;}
+.chr .s5 .s5_cont2 div p span{width: 47%;float: left;height: 1rem;margin-left: 2%;}
+.chr .s5 .s5_cont2 div .wish{background: url("../images/wish.png");background-size: 100% 100%;}
+.chr .s5 .s5_cont2 div .skip{background: url("../images/skip.png");background-size: 100% 100%;}
+.chr .s5 .s5_cont2 div .look{background: url("../images/look.png");height: 1.2rem;width:4rem;background-size: 100% 100%;
+    margin-bottom: 0.2rem;display: inline-block;border: none;}
+/*许愿成功弹窗*/
+.chr .wish_suc{width: 60%;height: 2rem;background-color: rgba(0,0,0,0.7);text-align: center;font-size: 0.32rem;
+    color: white;position: absolute;top: 30%;left: 20%;display: none;z-index: 52;border-radius: 0.2rem;-webkit-border-radius: 0.2rem;}
+.chr .wish_suc p{line-height: 2rem;width: 100%;text-align: center;}
+/*许愿池*/
+.mc{background-color: rgba(0,0,0,0.7);position: fixed;top: 0;z-index: 56;width: 100%;height: 100%;display: none;max-width: 750px;}
+.wishpage{width: 100%;position: fixed;top: 5%;left: 0;z-index: 57;text-align: center;display: none;}
+.wishpage .wish_cont1{background: url("../images/s6.png");height: 2.5rem;background-size: 100% 100%;}
+.wishpage .wish_cont2{background: url("../images/s7.png");height: 7.3rem;background-size: 100% 100%;overflow: hidden;}
+.wishpage .wish_cont2 ul{width: 80%;margin: 0.2rem auto 0;}
+.wishpage .wish_cont2 ul li{margin-left:14%;margin-bottom: 0.35rem;}
+.wishpage .wish_cont2 ul li p{font-size: 0.24rem;line-height: 0.36rem;color: #333333;width: 100%;height: 0.72rem;overflow: hidden;text-align: justify;}
+.wishpage .wish_cont2 .replace{width: 2.65rem;height: 1rem;background: url("../images/replace.png");background-size: 100% 100%;border: none;margin-top: 0.2rem;}
+.wishpage .close{margin-top: 0.2rem;width: 0.8rem;height: 0.8rem;}
+/*许愿*/
+.chr .s6{display: none;width: 100%;height: 100%;position: absolute;top: 0;left: 0;text-align: center;z-index: 53;}
+.chr .s6 .s6_cont1{background: url("../images/s8.jpg");height: 5.25rem;background-size: 100% 100%;}
+.chr .s6 .s6_cont2{background: url("../images/s9.jpg");height: 6.94rem;background-size: 100% 100%;overflow: hidden;text-align: center;}
+.chr .s6 .s6_cont2 ul{width: 76%;margin: 5.5% auto 0;overflow: hidden;}
+.chr .s6 .s6_cont2 ul li{width: 22.5%;margin-left: 2%;float: left;display: inline-block;height: 1.35rem;cursor: pointer;margin-bottom: 0.1rem;}
+.chr .s6 .s6_cont2 ul .border{background-color: rgba(252,255,24,0.5);}
+.chr .s6 .s6_cont2 .confirm{background: url("../images/confirm.png");height: 1rem;width: 2.8rem;border: none;background-size: 100% 100%;margin-top: 0.4rem;}
+/*挑选装饰的结果页面*/
+.result{width: 100%;position: fixed;top: 15%;z-index: 57;text-align: center; display: none;background: url("../images/giftbg.png");height: 7rem;background-size: 100% 100%;max-width: 750px;}
+.result .r_succ{width: 80%;margin: 0.2rem auto 0;}
+.result .r_succ img{width: 95%;height: auto;margin-bottom: 0.2rem;}
+.result .r_succ button{background: url("../images/bttret1.png");background-size: 100% 100%;height: 1.5rem;width:4.5rem; }
+.result .r_fail{width: 80%;margin: 0.2rem auto 0;}
+.result .r_fail img{width: 95%;height: auto;margin-bottom: 0.2rem;}
+.result .r_fail button{background: url("../images/again.png");background-size: 100% 100%;height: 1.5rem;width:4.5rem; }
+.close1{position: fixed;bottom: 15%;left: 50%;margin-left: -0.35rem;z-index: 57;display: none;width: 0.8rem;height: 0.8rem;}
+/*音乐图片页面*/
+.chr .s7{display: none;width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: white;text-align: center;z-index: 54;}
+.chr .s7 .s7_cont1{background: url("../images/s10.jpg");height: 6.81rem;background-size: 100% 100%;text-align: right;}
+.chr .s7 .s7_cont1 .closeMusic{width: 0.76rem;height: 0.76rem;margin: 0.7rem 0.5rem 0 0;}
+.chr .s7 .s7_cont2{background: url("../images/s11.jpg");height: 5.36rem;background-size: 100% 100%;overflow: hidden;text-align: right;}
+.chr .s7 .s7_cont2 .m_gift{margin: 1.6rem auto;width: 2rem;height: 2rem;margin-right: 1rem;background-color: rgba(0,0,0,0);border: none;}
+/*书信页面*/
+.chr .s8{display: none;width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: white;text-align: center;z-index: 55;}
+.chr .s8 .s8_cont1{background: url("../images/s12.jpg");height: 4.2rem;background-size: 100% 100%;text-align: right;}
+.chr .s8 .s8_cont1 .closeMusic{width: 0.76rem;height: 0.76rem;margin: 0.7rem 0.5rem 0 0;}
+.chr .s8 .s8_cont2{background: url("../images/s13.jpg");height: 4.31rem;background-size: 100% 100%;overflow: hidden;text-align: center;}
+.chr .s8 .s8_cont2 .s8_letter{background: url("../images/openLetter.png") no-repeat;width: 4rem;height: 1.5rem;background-size: 100% 100%;margin-top: 0.4rem;}
+.chr .s8 .s8_cont2 .s8_gift{background: url("../images/opengift.png") no-repeat;width: 4rem;height: 1.5rem;background-size: 100% 100%;}
+.chr .s8 .s8_cont3{background: url("../images/s14.jpg");height: 3.68rem;background-size: 100% 100%;}
+/*书信*/
+.letter{display: none;width: 100%;height: 100%;position: absolute;top: 5%;left: 0;text-align: center;z-index: 57;}
+.letter .let_cont1{background: url("../images/s15.png");height: 5.31rem;background-size: 100% 100%;}
+.letter .let_cont2{background: url("../images/s16.png");height: 3.51rem;background-size: 100% 100%;overflow: hidden;text-align: center;}
+.letter .let_cont2 div{width: 80%;margin: 0.2rem auto 0;}
+.letter .let_cont2 div p{font-size: 0.3rem;color: #94623a;;line-height: 0.48rem;}
+.letter .let_cont2 div .share_btn{height: auto;width:3rem; margin-top: 0.3rem;background-color: rgba(0,0,0,0);border: none;}
+.letter .let_cont2 div .share_btn img{width: 100%;height: auto;}
+.sharepage{position: fixed;top: 0;max-width: 750px;height: 100%;display: none;z-index: 58;width: 100%;}
+/*礼物*/
+.gift{display: none;width: 100%;height: 100%;position: absolute;top: 5%;left: 0;text-align: center;z-index: 57;}
+.gift .gift_cont1{background: url("../images/s17.png");height: 3.75rem;background-size: 100% 100%;}
+.gift .gift_cont2{background: url("../images/s18.png");height: 3.9rem;background-size: 100% 100%;overflow: hidden;text-align: center;}
+.gift .gift_cont2 div{width: 60%;margin: 0.2rem auto 0;text-align: center;}
+.gift .gift_cont2 div p{font-size: 0.3rem;color: #d50110;;line-height: 0.48rem;text-align: center;}
+.gift .gift_cont2 div img{width: 42%;height: auto;margin-top: 0.6rem;}

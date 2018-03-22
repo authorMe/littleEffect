@@ -1,0 +1,169 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            *{font-size: 30px;}
+            div{width: 600px;height: 35px;position:absolute;top:100px;left:100px;overflow: hidden;}
+            ul{width: 600px;height: auto;}
+            ul li{height: 35px;line-height: 35px;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>fnakdjfaosidfkc 1</li>
+                <li>fnakdjfaosidfkc 2</li>
+                <li>fnakdjfaosidfkc 3</li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+
+            var num = 0;
+            setInterval(function(){
+                num = num + 1;
+                if(num > $('ul').length-1){
+                    num = 1;
+                    $('ul').css({marginTop:'0'});
+                }
+                $('ul').stop().animate({marginTop:-(num*35)+'px'},500);
+            },2000);
+
+        </script>
+        <script type="text/javascript" src="jquery-1.12.4.js"></script>
+    </body>
+</html> -->
+
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <style type="text/css">
+            #demo {
+                overflow: hidden;
+                height: 30px;
+            }
+
+            #demo1 li, #demo2 li {
+                line-height: 50px;
+                list-style: none;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="demo">
+        <ul id="demo1">
+            <li>1111111111</li>
+            <li>2222222222</li>
+            <li>3333333333</li>
+        </ul>
+        <ul id="demo2"></ul>
+    </div>
+    </body>
+    <script type="text/javascript">
+        var speed = 40;
+        window.onload = function () {
+            var demo = document.getElementById("demo");
+            var demo2 = document.getElementById("demo2");
+            var demo1 = document.getElementById("demo1");
+            demo2.innerHTML = demo1.innerHTML;
+
+            function Marquee() {
+                if (demo.scrollTop >= demo1.offsetHeight) {
+                    demo.scrollTop = 0;
+                } else {
+                    demo.scrollTop = demo.scrollTop + 1;
+                }
+            }
+            var timer = setInterval(Marquee, speed);
+        }
+    </script>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        .slide-list li span:nth-child(1){
+            width: 60px;
+        }
+        .slide-list li span:nth-child(2){
+            width: 90px;
+        }
+        .slide-list li span:nth-child(3){
+            width: 90px;
+            margin-right: 0px;
+        }
+
+        .slide-container{
+            position: relative;
+            overflow: hidden;
+            height: 30px;
+        }
+        .slide-list{
+            position:absolute;
+            width:100%;
+            left:0;
+            top:0;
+            color:#000;
+            margin:0;
+            padding:0;
+        }
+        .slide-list li{
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+        
+        <div class="slide-container">
+            <ul class="slide-list js-slide-list">
+                <li class="odd"><span>item1</span><span>item1</span><span>item1</span></li>
+                <li class="even"><span>item2</span><span>item2</span><span>item2</span></li>
+                <li class="odd"><span>item3</span><span>item3</span><span>item3</span></li>
+                <li class="even"><span>item4</span><span>item4</span><span>item4</span></li>
+            </ul>
+        </div> 
+
+        <script type="text/javascript" src="jquery-1.12.4.js"></script>
+        <script type="text/javascript">
+            // var doscroll = function(){
+            //      var $parent = $('.js-slide-list');
+            //      var $first = $parent.find('li:first');
+            //      var height = $first.height();
+            //      $first.animate({
+            //          height: 0
+            //          }, 500, function() {
+            //          $first.css('height', height).appendTo($parent);
+            //      });    
+            // };
+            // setInterval(function(){doscroll()}, 2000);
+
+            var doscroll = function(){
+                 var $parent = $('.js-slide-list');
+                 var $first = $parent.find('li:first');
+                 var height = $first.height();
+                 $first.animate({
+                     marginTop: -height + 'px'
+                     }, 500, function() {
+                     $first.css('marginTop', 0).appendTo($parent);
+                 });    
+            };
+            setInterval(function(){doscroll()}, 2000);
+        </script>
+</body>
+</html>
+
+

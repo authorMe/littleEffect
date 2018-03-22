@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <style type="text/css">
+        div{height:1500px;}
+        button{width:170px;line-height:2rem;font-size: 20px;}
+    </style>
+</head>
+<body>
+    <div>内容</div>
+   <button class="btn1">点击我返回顶部1</button>
+   <button class="btn2">点击我返回顶部2</button>
+
+   <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> 
+   <script type="text/javascript">
+    $(function(){
+        /** 第一种 */
+        // rate为缓动速率，范围是1到无穷大，值越大，运动越快
+        var backToTop = function (rate) {
+            var doc = document.body.scrollTop? document.body : document.documentElement;
+            var scrollTop = doc.scrollTop;
+            
+            var top = function () {
+                scrollTop = scrollTop + (0 - scrollTop) / (rate || 2);
+                
+                // 临界判断，终止动画
+                if (scrollTop < 1) {
+                    doc.scrollTop = 0;
+                    return;
+                }
+                doc.scrollTop = scrollTop;
+                // 动画gogogo!
+                requestAnimationFrame(top);    
+            };
+            top();
+        };
+        $('.btn1').click(function(){
+            backToTop(4);
+        });
+
+
+        /** 第二种 */
+        // A:起始位置，B:目标位置，rate:缓动速率，callback:变化的位置回调,支持两个参数,value和isEnding,表示当前的位置值(数值)以及是否动画结束了(布尔值)
+        Math.easeout = function (A, B, rate, callback) {
+            if (A == B || typeof A != 'number') {
+                return;    
+            }
+            B = B || 0;
+            rate = rate || 2;
+            
+            var step = function () {
+                A = A + (B - A) / rate;
+                
+                if (Math.abs(A - B) < 1) {
+                    callback(B, true);
+                    return;
+                }
+                callback(A, false);
+                requestAnimationFrame(step);    
+            };
+            step();
+        };
+        $('.btn2').click(function(){
+            var doc = document.body.scrollTop? document.body : document.documentElement;
+            Math.easeout(doc.scrollTop, 0, 4, function (value){
+                doc.scrollTop = value;
+            });
+        });
+    })
+    </script> 
+</body>
+</html>

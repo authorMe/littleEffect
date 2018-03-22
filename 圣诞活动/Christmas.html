@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="keywords" content="女装，品牌女装，女装代理，女装加盟，女装招商，中国女装网" />
+    <meta name="Description" content="中国女装网(nz86.com)-最具影响力的品牌女装信息展示中心，品牌女装招商加盟、女装代理、女装批发平台。女装门户，商机尽揽！" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/Christmas.css">
+    <title>圣诞活动</title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+    <div class="chr">
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3">
+            <div class="s3_cont"></div>
+        </div>
+        <!--游戏开始-->
+        <div class="s4">
+            <div id="ing">
+                <div id='suju' kiy='1'></div>
+                <div class="beijinzez">
+                    <div class="shellstart">
+                        <div onclick="funrun()" class="start">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="timeshell">
+                    <span>剩 余 时 间 ：</span>
+                    <span id="time1">20</span>
+                    <span id="czsl">0</span>
+                    <span>苹果数量 ：</span>
+                </div>
+                <div id='beijin' kiy='1'></div>
+                <div id="mian" class="mian">
+
+                </div>
+                <div class="bott">
+                    <div class="bott_left">
+
+                    </div>
+                    <div id="person"  class="person" i='0' fens='0'>
+
+                    </div>
+                    <div class="bott_rihgt">
+
+                    </div>
+                </div>
+            </div>
+            <div id="end">
+                <div class="endmain">
+                    <!--失败页面-->
+                    <!--<div class="endcten">-->
+                        <!--<div class="endcten_top">-->
+                            <!--收 获 的 苹 果 ：-->
+                        <!--</div>-->
+                        <!--<div class="endcten_btt">-->
+                            <!--<img src="images/apple.png" />-->
+                            <!--<span id="endfeng"> 0</span>-->
+                        <!--</div>-->
+                        <!--<img class="fail" src="images/fail.jpg" alt="">-->
+                        <!--<div class="bttret">-->
+                            <!--<img onclick="reten()" src="images/bttret.png" />-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--通关页面-->
+                    <div class="succ">
+                        <img class="success" src="images/succ.jpg" alt="">
+                        <div class="bttret">
+                            <img onclick="reten()" src="images/bttret.png" />
+                        </div>
+                        <div class="bttret1">
+                            <img src="images/bttret1.png" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--end-->
+        <!--许愿-->
+        <div class="s5">
+            <div class="s5_cont1"></div>
+            <div class="s5_cont2">
+                <div>
+                    <textarea></textarea>
+                    <p><span class="wish"></span><span class="skip"></span></p>
+                    <button type="button" class="look"></button>
+                </div>
+            </div>
+        </div>
+        <!--许愿成功弹窗-->
+        <div class="wish_suc">
+            <p>许愿成功</p>
+        </div>
+        <!--许愿池弹窗-->
+        <div class="mc"></div>
+        <div class="wishpage">
+            <div class="wish_cont1"></div>
+            <div class="wish_cont2">
+                <ul>
+                    <li>
+                        <p class="blessings">新一年，只希望自己能从阴影中走出来。新一年，只希望自己能从阴影中走出来。</p>
+                    </li>
+                    <li>
+                        <p class="blessings">新一年，只希望自己能从阴影中走出来，拥抱新生活。</p>
+                    </li>
+                    <li>
+                        <p class="blessings">新一年，只希望自己能从阴影中走出来。新一年，只希望自己能从阴影中走出来，拥抱新生活。</p>
+                    </li>
+                    <li>
+                        <p class="blessings">新一年，只希望自己能从阴影中走出来，拥抱新生活。</p>
+                    </li>
+                    <li>
+                        <p class="blessings">新一年，只希望自己能从阴影中走出来，拥抱新生活。</p>
+                    </li>
+                </ul>
+                <button class="replace"></button>
+            </div>
+            <img class="close" src="images/close.png" alt="">
+        </div>
+        <!--装饰页面-->
+        <div class="s6">
+            <div class="s6_cont1"></div>
+            <div class="s6_cont2">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button class="confirm" type="button"></button>
+            </div>
+        </div>
+        <!--挑选装饰的结果页面-->
+        <div class="result">
+            <!--成功页面-->
+            <div class="r_succ">
+                <img src="images/r_succ.jpg" alt="">
+                <button class="skip1" type="button"></button>
+            </div>
+            <!--失败页面-->
+            <!--<div class="r_fail">-->
+                <!--<img src="images/r_fail.jpg" alt="">-->
+                <!--<button class="skip2" type="button"></button>-->
+            <!--</div>-->
+        </div>
+        <!--音乐图片页面-->
+        <div class="s7">
+            <div class="s7_cont1">
+                <img class="closeMusic" onclick='autoPlay();' src="images/music.png" alt="">
+            </div>
+            <div class="s7_cont2">
+                <audio id="myaudio" src="ling.mp3" controls="controls" loop="false" hidden="true"></audio>
+                <button class="m_gift"></button>
+            </div>
+        </div>
+        <!--书信页面-->
+        <div class="s8">
+            <div class="s8_cont1">
+                <img class="closeMusic" onclick='autoPlay();' src="images/music.png" alt="">
+            </div>
+            <div class="s8_cont2">
+                <button class="s8_letter"></button>
+                <button class="s8_gift"></button>
+            </div>
+            <div class="s8_cont3"></div>
+        </div>
+        <!--书信-->
+        <div class="letter">
+            <div class="let_cont1"></div>
+            <div class="let_cont2">
+                <div>
+                    <p>祝您心想事成，万事如意！</p>
+                    <button class="share_btn" type="button"><img src="images/share.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <!--分享引导图-->
+        <img class="sharepage" src="images/arrow.png" alt="">
+        <!--礼物-->
+        <div class="gift">
+            <div class="gift_cont1"></div>
+            <div class="gift_cont2">
+                <div>
+                    <p>识别下方二维码，回复“抽奖”<br>
+                        即有机会获得圣诞新衣哦！</p>
+                    <img src="images/gzh.png" alt="">
+                </div>
+            </div>
+        </div>
+        <img class="close1" src="images/close.png" alt="">
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    //进入游戏页面
+    $(".s3 .s3_cont").on("click",function () {
+//        $(".s3").hide();
+        $(".s4").fadeIn();
+    });
+    // 进入许愿页面
+    $(".bttret1").click(function(){
+        $(".s4").hide();
+        $(".s5").show();
+    });
+    // 弹出许愿成功页面
+    $(".wish").click(function(){
+        $(".wish_suc").show();
+        setTimeout(function () {
+            $(".wish_suc").hide();
+            $(".s5").hide();
+            $(".s6").show();
+        },2000)
+    });
+    $(".skip").click(function () {
+        $(".s5").hide();
+        $(".s6").show();
+    });
+    $(".s6_cont2 li").click(function () {
+        $(this).toggleClass("border");
+    });
+//    查看许愿池
+    $(".look").click(function () {
+        $(".mc").show();
+        $(".wishpage").show();
+    });
+//    关闭许愿池弹窗
+    $(".close").click(function () {
+        $(".mc").hide();
+        $(".wishpage").hide();
+        $(".result").hide();
+    });
+
+    $(".confirm").click(function () {
+        $(".mc").show();
+        $(".result").show();
+        $(".close1").show();
+    });
+    $(".close1").click(function () {
+        $(".mc").hide();
+        $(".result").hide();
+        $(".letter").hide();
+        $(".gift").hide();
+        $(this).hide();
+    });
+//    重新选择
+    $(".skip2").click(function () {
+        $(".mc").hide();
+        $(".result").hide();
+        $(".close1").hide();
+    });
+//    进入礼物页面
+    $(".skip1").click(function () {
+        $(".result").hide();
+        $(".close1").hide();
+        $(".mc").hide();
+        $(".s6").hide();
+        $(".s7").show();
+        autoPlay();
+    });
+    // 音频播放
+
+    // 检查是否正在播放
+    var isPlaying =false;
+    function autoPlay() {
+        var player = document.getElementById('myaudio');
+        if (isPlaying) {
+            // 如果正在播放, 停止播放并停止读取此音乐文件
+            player.pause();
+            player.src = '';
+        } else {
+            player.src = 'ling.mp3';
+            player.play();
+        }
+        isPlaying = !isPlaying;
+    }
+
+    //    点击礼物跳转
+    $(".m_gift").click(function () {
+        $(".s7").hide();
+        $(".s8").show();
+    });
+    //  书信页面弹窗
+    $(".s8_letter").click(function () {
+        $(".mc").show();
+        $(".letter").show();
+        $(".close1").show();
+    });
+    //  礼物页面弹窗
+    $(".s8_gift").click(function () {
+        $(".mc").show();
+        $(".gift").show();
+        $(".close1").show();
+    });
+//    分享按钮
+    $(".share_btn").click(function () {
+        $(".sharepage").show();
+    });
+    $(".sharepage").click(function () {
+        $(this).hide();
+    });
+
+//    解决安卓手机长按问题
+    //    解决安卓手机长按问题
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    if(isAndroid) {
+        document.oncontextmenu=function(e){
+            //或者return false;
+            e.preventDefault();
+        };
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,79 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>推广文案</title>
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl . '/fodder/pc.css' ?>"/>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="clipboard.min.js"></script>
+</head>
+
+<body>
+<div id="box">
+    <header>有脾气拿出来，有脾气压下去是本事结登啊很多时间哈速度快大厦就开始大哭技术黄金时代会撒娇的好好的就是打了快</header>
+    <div id="content">
+        <!--文章内容-->
+        <div id="sectionFooter">
+        	<a name="5F"></a>         
+            <section style="margin-bottom:30px;" class="public_text">
+                <!--背景-->
+                <div class="bg">
+                    <!--章节名称：第一章  span里面放第几章节-->
+                    <h5>
+                       第一章：今天
+                    </h5>
+                </div>
+
+                <div class="text">新三板做市指数在1010到1000点位徘徊40个交易日后，在11月13日盘中跌破了1000点大关。这也是2015年3月18日新三板做市指数发布以来首次跌破1000点大关。</div>
+
+            </section>
+        </div>
+</div>
+
+<div class="foot_box">
+    <div class="footer">
+        <div class="footer5">
+            复制模板
+            <ul class="copyUl">
+                <li class="copyTitle">复制标题</li>
+                <li class="copyAll" data-clipboard-target="#box">复制正文</li>
+            </ul>
+        </div>
+        <div class="footer6">
+            <img src="" class="img3"/><a href="" style="color: black">生成原文链接</a>
+        </div>
+           </div>
+</div>
+    </div>
+</body>
+<script type="text/javascript">
+    function copys (tag) {
+        var range = document.createRange();
+        var selection = window.getSelection();
+        var beCopy;
+        if( tag == "content"){
+            beCopy = document.getElementById('content');
+        }else{
+            beCopy = document.getElementsByTagName('header')[0];
+        }
+        range.selectNode(beCopy);
+        if (selection.rangeCount > 0) {
+            selection.removeAllRanges();
+        }
+        selection.addRange(range);
+        if (document.queryCommandSupported('copy')) {
+            document.execCommand('copy');
+        }else{
+            console.log("error");
+        };
+        setTimeout(function(){
+            alert("复制成功！");
+        },500)
+    }
+    $(".copyAll").on("click",function(){
+        copys("content");
+    })
+
+    $(".copyTitle").on("click",function(event){
+        copys("header");
+    })
+</script>
